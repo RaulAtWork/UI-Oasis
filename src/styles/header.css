@@ -1,0 +1,21 @@
+header{
+    border-bottom: 1px solid white;
+    padding: var(--padding-l);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+.header-title{
+    margin-right: var(--margin-m);
+}
+
+.header-nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+.header-nav li{
+    font-weight: bold;
+}
