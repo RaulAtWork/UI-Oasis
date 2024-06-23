@@ -1,5 +1,6 @@
 .side-bar{
     width: 250px;
+    padding: var(--padding-l);
 }
 
 .side-bar.l-border{
@@ -11,9 +12,6 @@
 
 }
 
-.side-list{
-    padding: var(--padding-m)
-}
 
 .side-list ul{
     padding-left: var(--padding-xl);

@@ -2,19 +2,21 @@ import { useParams } from "react-router-dom";
 import SideBar from "../components/SideBar";
 import C_SideBar from "./Components/C_Sidebar";
 import C_Buttons from "./Components/C_Buttons";
+import Introduction from "./Components/Introduction";
 
 const rootPath = "/components/"
 
 const sideBarData = [
   {
     section: "Getting Started",
-    topics: [{ name: "Topic 1" }, { name: "Topic 2" }],
+    topics: [{ name: "Introduction", link:rootPath+"introduction" }],
   },
   { section: "Components", 
     topics: [{ name: "Side Bar", link:rootPath+"sidebar" }, { name: "Button" , link:rootPath+"button" }] },
 ];
 
 const pageByTitle = {
+  introduction: <Introduction/>,
   sidebar: <C_SideBar/>,
   button: <C_Buttons/>
 }
