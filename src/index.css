@@ -1,13 +1,17 @@
 @import './styles/reset.css';
 @import './styles/header.css';
+@import './styles/sidebar.css';
 @import './styles/styles.css';
 
 :root{
   --padding-s: 6px;
   --padding-m: 10px;
   --padding-l: 32px;
-  --paddign-xl: 50px;
+  --padding-xl: 50px;
 
   --margin-s: 6px;
   --margin-m: 10px;
+  --margin-xl:40px;
+
+  --header-height: 50px;
 }

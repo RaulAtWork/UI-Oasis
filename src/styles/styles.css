@@ -1,17 +1,33 @@
-html{
-    background-color: black;
-    color: white;
+html {
+  background-color: black;
+  color: white;
 }
 
-
-main{
-    display: flex;
-    justify-content: center;
+#root {
+  display: flex;
+  flex-direction: column;
 }
 
-.container{
-    max-width: 1000px;
-    display: flex;
-    flex: 1;
+main {
+  display: flex;
+  justify-content: center;
 }
 
+.container {
+  max-width: 1000px;
+  display: flex;
+  flex: 1;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* We remove the header height to cover all the page. Header height = header paddign x2 + bottom border */
+  min-height: calc(100vh - 65px);
+}
+
+.fa-icon{
+  width: 25px;
+  margin: 0 var(--margin-s);
+}
