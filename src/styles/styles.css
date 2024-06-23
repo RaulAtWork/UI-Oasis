@@ -31,3 +31,8 @@ main {
   width: 25px;
   margin: 0 var(--margin-s);
 }
+
+.component-details{
+  display: flex;
+  flex-direction: column;
+}

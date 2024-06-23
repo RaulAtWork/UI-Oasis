@@ -22,4 +22,10 @@ header{
 
 .header-nav li{
     font-weight: bold;
+    color: var(--light-text-color);
+}
+
+.header-nav a.active{
+    color: white;
+    text-decoration: underline;
 }

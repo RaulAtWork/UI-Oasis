@@ -12,7 +12,9 @@ function App() {
       <Header/>
     <Routes>
       <Route path="/" Component={Home}/>
-      <Route path="/components" Component={Components}/>
+      <Route path="/components" Component={Components}>
+        <Route path=":title" />
+      </Route>
       <Route path="/advice" Component={Advice}/>
     </Routes>
     </>

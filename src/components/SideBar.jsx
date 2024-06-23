@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import Collapsible from "./Collapsible";
 
 function SideBar({ data, border }) {
   /*data: [{section: XXX, topics: [
-                {name: XXX, component: XXX},
-                {name: XXX, component: XXX},...
+                {name: XXX, link: XXX},
+                {name: XXX, link: XXX},...
                 ]
             },....]*/
 
@@ -33,7 +34,7 @@ function Topics({ topics }) {
     <ul>
       {topics.map((t, index) => (
         <li className="level-2" key={index}>
-          {t.name}
+          <Link to={t.link}>{t.name}</Link>
         </li>
       ))}
     </ul>
