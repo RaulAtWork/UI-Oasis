@@ -8,6 +8,10 @@ html {
   flex-direction: column;
 }
 
+button{
+  cursor: pointer;
+}
+
 .container {
   max-width: 1000px;
   display: flex;
@@ -23,10 +27,7 @@ html {
   min-height: calc(100vh - 65px);
 }
 
-.fa-icon{
-  width: 25px;
-  margin: 0 var(--margin-s);
-}
+
 
 .component-details{
   display: flex;

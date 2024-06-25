@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 
 const Collapsible = ({ title, children, open=true }) => {
+  // Open by default but configurable based on props
   const [isOpen, setIsOpen] = useState(open);
 
   const toggleCollapse = () => {

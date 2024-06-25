@@ -1,0 +1,17 @@
+.code-syntax{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.code-syntax .code-header{
+    background-color: hsl(0, 0%, 20%);
+    padding: var(--padding-s) var(--padding-m);
+    display: flex;
+}
+
+
+.code-syntax .code-copy{
+    margin-left: auto;
+    align-items: center;
+}

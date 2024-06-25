@@ -1,37 +1,40 @@
 import { useParams } from "react-router-dom";
 import SideBar from "../components/SideBar";
-import C_SideBar from "./Components/C_Sidebar";
-import C_Buttons from "./Components/C_Buttons";
-import Introduction from "./Components/Introduction";
+import OnThisPage from "../components/OnThisPage";
+import { useEffect, useState } from "react";
 
-const rootPath = "/components/"
+import { topicByTitle } from "./Components.Titles";
+
+
 
 const sideBarData = [
   {
     section: "Getting Started",
-    topics: [{ name: "Introduction", link:rootPath+"introduction" }],
+    topics: [topicByTitle.introduction],
   },
-  { section: "Components", 
-    topics: [{ name: "Side Bar", link:rootPath+"sidebar" }, { name: "Button" , link:rootPath+"button" }] },
+  {
+    section: "Components",
+    topics: [topicByTitle.sidebar, topicByTitle.buttons, topicByTitle.code],
+  },
 ];
 
-const pageByTitle = {
-  introduction: <Introduction/>,
-  sidebar: <C_SideBar/>,
-  button: <C_Buttons/>
-}
-
 function Components() {
+  let { title } = useParams();
+  const [currentComponent, setCurrentComponent] = useState();
 
-  let {title} = useParams();
+  useEffect(() => {
+    setCurrentComponent(topicByTitle[title]?.component);
+  }, [title]);
 
   return (
     <div className="main-content">
       <SideBar data={sideBarData} border="right" />
-      <main className="container">
-        {pageByTitle[title]}
-      </main>
-      <SideBar data={sideBarData} border="left" />
+      <main className="container">{currentComponent}</main>
+      <OnThisPage
+        trackedComponent={currentComponent}
+        querySelector="article.component-details h2"
+        border="left"
+      />
     </div>
   );
 }
