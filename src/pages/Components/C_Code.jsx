@@ -1,11 +1,15 @@
-import CodeSyntax from "../../components/CodeSyntax"
+import CodeSyntax from "../../components/code-syntaax/CodeSyntax"
 
-const codeExample = `function CodeSyntax({ codeString }) {
+const codeExample = `function(){ let rem = 1 + 1}`
+
+const codeSource = `function CodeSyntax({ codeString }) {
   const [copied, setCopied] = useState(false)
 
   return (
     <div className="code-syntax">
-      <div className="code-header">
+
+      {/*Header*/}
+      <div className="code-header"> 
         <span className="code-title">Code</span>
         <CopyToClipboard text={codeString} onCopy={()=> setCopied(true)}>
           <button className="code-copy">
@@ -14,12 +18,14 @@ const codeExample = `function CodeSyntax({ codeString }) {
           </button>
         </CopyToClipboard>
       </div>
-      <SyntaxHighlighter language="javascript" style={dracula}>
+
+      {/*Code preview with custom style*/}
+      <SyntaxHighlighter language="javascript" style={dracula}> 
         {codeString}
       </SyntaxHighlighter>
     </div>
   );
-}`
+}   `
 
 function C_Code(){
     return<article className="component-details">
@@ -27,6 +33,7 @@ function C_Code(){
         <h2>Preview</h2>
         <CodeSyntax codeString={codeExample}/>
         <h2>Code</h2>
+        <CodeSyntax codeString={codeSource}/>
     </article>
 }
 

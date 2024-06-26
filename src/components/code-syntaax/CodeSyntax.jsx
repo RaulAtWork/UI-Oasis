@@ -3,14 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
+import "./code-syntax.css"
 
 function CodeSyntax({ codeString }) {
   const [copied, setCopied] = useState(false)
 
   return (
     <div className="code-syntax">
-      <div className="code-header">
+
+      {/*Header*/}
+      <div className="code-header"> 
         <span className="code-title">Code</span>
         <CopyToClipboard text={codeString} onCopy={()=> setCopied(true)}>
           <button className="code-copy">
@@ -19,7 +23,9 @@ function CodeSyntax({ codeString }) {
           </button>
         </CopyToClipboard>
       </div>
-      <SyntaxHighlighter language="javascript" style={dracula}>
+
+      {/*Code preview with custom style*/}
+      <SyntaxHighlighter language="javascript" style={atomOneDark}> 
         {codeString}
       </SyntaxHighlighter>
     </div>

@@ -1,7 +1,7 @@
 import SideBar from "../../components/SideBar"
 
 function C_SideBar(){
-    return(<article id="c-sidebar" className="component-details">
+    return(<article className="component-details">
         <h1> SideBar </h1>
         <h2> Preview </h2>
         {/*<SideBar/>*/}
