@@ -2,19 +2,28 @@
 @import './styles/header.css';
 @import './styles/sidebar.css';
 @import './styles/icon.css';
+@import './styles/badge.css';
 @import './styles/styles.css';
 
 :root{
-  --padding-s: 6px;
+  --padding-s: 4px;
   --padding-m: 10px;
   --padding-l: 32px;
   --padding-xl: 50px;
 
   --margin-s: 6px;
   --margin-m: 10px;
+  --margin-l: 32px;
   --margin-xl:40px;
 
   --header-height: 50px;
 
-  --light-text-color: hsl(0, 0%, 49%);
+  --light-text-color: var(--color-neutral-400);
+
+  --color-neutral-100: hsl(0, 0%, 0%);
+  --color-neutral-200: hsl(0, 0%, 20%);
+  --color-neutral-300: hsl(220, 13%, 18%);
+  --color-neutral-400: hsl(0, 0%, 49%);
+  --color-neutral-500: hsl(0, 0%, 65%);
+
 }

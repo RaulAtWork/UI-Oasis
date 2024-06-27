@@ -12,6 +12,14 @@ button{
   cursor: pointer;
 }
 
+h1{
+  font-size: 40px;
+}
+
+h2{
+  margin-top: var(--margin-l);
+}
+
 .container {
   max-width: 1000px;
   display: flex;

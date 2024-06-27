@@ -14,3 +14,15 @@
     margin-left: auto;
     align-items: center;
 }
+
+.code-title{
+    margin-right: var(--margin-s);
+    padding: var(--padding-s);
+}
+
+.code-title.active{
+    background-color: var(--color-neutral-400);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}

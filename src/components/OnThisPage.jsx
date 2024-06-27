@@ -6,7 +6,6 @@ function OnThisPage({trackedComponent, querySelector, border }) {
   useEffect(() => {
     if (!querySelector) return;
     let query = document.querySelectorAll(querySelector);
-    console.log(query);
     setTitles(Array.from(query).map((e) => e.textContent));
   }, [querySelector, trackedComponent]);
 
