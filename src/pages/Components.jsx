@@ -14,7 +14,7 @@ const sideBarData = [
   },
   {
     section: "Components",
-    topics: [topicByTitle.sidebar, topicByTitle.buttons, topicByTitle.code],
+    topics: [topicByTitle.code, topicByTitle.buttons, topicByTitle.sidebar],
   },
 ];
 

@@ -1,6 +1,7 @@
 .code-syntax{
     display: flex;
     flex-direction: column;
+    height: 500px;
 }
 
 .code-syntax .code-header{
