@@ -8,7 +8,7 @@ function Libraries({ data }) {
 */
 
   return (
-    <ul className="bullet-list">
+    <ul className="bullet-list separator-large">
       {data.map((lib, index) => (
         <li key={index + "-" + lib}>
           <span className="badge">{lib.library}</span>: <ExternalLink link={lib.link} display={lib.library} />,{" "}

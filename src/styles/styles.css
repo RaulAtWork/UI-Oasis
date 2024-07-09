@@ -56,6 +56,6 @@ h2{
   padding-left: 6px;
 }
 
-.bullet-list li{
+.bullet-list.separator-large li{
   margin-bottom: 6px;
 }

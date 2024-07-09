@@ -1,6 +1,6 @@
 import C_Code from "./Components/C_Code";
 import C_SideBar from "./Components/C_Sidebar";
-import C_Buttons from "./Components/C_Buttons";
+import C_Buttons from "./Components/C_Buttons/C_Buttons";
 import Introduction from "./Components/Introduction";
 
 

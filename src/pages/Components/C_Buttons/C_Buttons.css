@@ -1,0 +1,52 @@
+.button-list{
+    display: flex;
+    gap: 10px;
+}
+
+
+:root {
+    --shade-50: hsl(203, 20%, 20%);    
+    --shade-100: hsl(204, 68%, 30%);
+    --shade-200: hsl(204, 90%, 40%);
+    --shade-300: hsl(204, 68%, 47%);
+    --padding-button: 8px;
+}
+
+
+.button-primary,
+.button-outline,
+.button-secondary,
+.button-tertiary {
+    padding: var(--padding-button);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button-primary {
+  background-color: var(--shade-300);
+}
+.button-primary:hover{
+    background-color: var(--shade-100);
+}
+
+.button-outline {
+  padding: calc(var(--padding-button) - 2px);
+  border: 2px solid var(--shade-300);
+  color: var(--shade-300);
+}
+.button-outline:hover{
+    background-color: var(--shade-300);
+    color: white;
+}
+
+.button-secondary {
+    background-color: var(--shade-50);
+    color: white;
+}
+.button-secondary:hover{
+    background-color: var(--shade-100);
+}
+
+.button-tertiary:hover {
+    color: var(--shade-100)
+}
