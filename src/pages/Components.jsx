@@ -5,8 +5,6 @@ import { useEffect, useState } from "react";
 
 import { topicByTitle } from "./Components.Titles";
 
-
-
 const sideBarData = [
   {
     section: "Getting Started",
@@ -14,7 +12,11 @@ const sideBarData = [
   },
   {
     section: "Components",
-    topics: [topicByTitle.code, topicByTitle.buttons, topicByTitle.sidebar],
+    topics: [topicByTitle.buttons],
+  },
+  {
+    section: "Advance Components",
+    topics: [topicByTitle.code, topicByTitle.sidebar],
   },
 ];
 

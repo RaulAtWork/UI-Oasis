@@ -1,5 +1,5 @@
 .side-bar{
-    width: 250px;
+    width: 300px;
     height: calc(100vh - 65px);
     padding: var(--padding-l);
     position: sticky;
@@ -17,7 +17,7 @@
 
 
 .side-list ul{
-    padding-left: var(--padding-xl);
+    padding-left: var(--padding-l);
 }
 
 .side-list li{
