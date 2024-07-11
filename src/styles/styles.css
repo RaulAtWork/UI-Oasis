@@ -59,3 +59,7 @@ h2{
 .bullet-list.separator-large li{
   margin-bottom: 6px;
 }
+
+br{
+  margin-top: 1rem;
+}

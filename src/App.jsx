@@ -15,7 +15,8 @@ function App() {
       <Route path="/" Component={Home}/>
       <Route path="/components" element={<Navigate to="/components/introduction"/>}/>
       <Route path="/components/:title" Component={Components}/>
-      <Route path="/advice" Component={Advice}/>
+      <Route path="/advice" element={<Navigate to="/advice/advice_intro"/>}/>
+      <Route path="/advice/:title" Component={Advice}/>
       <Route path="*" Component={PageNotFound}/>
     </Routes>
     </>

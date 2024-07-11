@@ -1,0 +1,58 @@
+:root{
+    --separation-xxs: 4px;
+    --separation-xs: 8px;
+    --separation-s: 12px;
+    --separation-m: 16px;
+    --separation-l: 24px;
+    --separation-xl: 32px;
+    --separation-xxl: 48px;
+}
+
+.w-xxs{
+    width: var(--separation-xxs);
+}
+.w-xs{
+    width: var(--separation-xs);
+}
+.w-s{
+    width: var(--separation-s);
+}
+.w-m{
+    width: var(--separation-m);
+}
+.w-l{
+    width: var(--separation-l);
+}
+.w-xl{
+    width: var(--separation-xl);
+}
+.w-xxl{
+    width: var(--separation-xxl);
+}
+
+.w-xxs,
+.w-xs,
+.w-s,
+.w-m,
+.w-l,
+.w-xl,
+.w-xxl{
+    height: var(--separation-m);
+    background-color: hsl(204, 90%, 40%);
+}
+
+.separation-preview{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.separation-preview > span {
+    display: flex;
+    width: 15ch;
+
+}
+
+.separation-preview > span > b{
+    width: 5ch;
+}

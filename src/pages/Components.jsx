@@ -3,7 +3,7 @@ import SideBar from "../components/SideBar";
 import OnThisPage from "../components/OnThisPage";
 import { useEffect, useState } from "react";
 
-import { topicByTitle } from "./Components.Titles";
+import { topicByTitle } from "./Topic.Titles";
 
 const sideBarData = [
   {
