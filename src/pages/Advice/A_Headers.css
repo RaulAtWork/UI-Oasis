@@ -1,0 +1,25 @@
+.lh-headers h3{
+    margin-top: 0;
+}
+
+.lh-headers h3.lh-1{
+    line-height: 1;
+}
+
+.lh-headers h3.lh-15{
+    line-height: 1.5;
+}
+
+
+.ls-headers h3{
+    margin-top: 0;
+}
+
+
+.ls-headers .lower-improved{
+    letter-spacing: -0.05em;
+}
+.ls-headers .upper-improved{
+    letter-spacing: +0.05em;
+}
+

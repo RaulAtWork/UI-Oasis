@@ -4,6 +4,7 @@ import C_Buttons from "./Components/C_Buttons/C_Buttons";
 import Introduction from "./Components/Introduction";
 import A_Introduction from "./Advice/A_Introduction";
 import A_Separation from "./Advice/A_Separation";
+import A_Headers from "./Advice/A_Headers";
 
 const componentPath = "/components/";
 const advicePath = "/advice/";
@@ -35,5 +36,10 @@ export const topicByTitle = {
     component: <A_Separation/>,
     name: "Margin and Padding",
     link: advicePath + "separation"
+  }, 
+  headers:{
+    component: <A_Headers/>,
+    name: "Headers",
+    link: advicePath + "headers"
   }
 };

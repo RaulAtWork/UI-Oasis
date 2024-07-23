@@ -16,7 +16,7 @@ h1{
   font-size: 40px;
 }
 
-h2{
+h2, h3{
   margin-top: var(--margin-l);
 }
 
@@ -58,8 +58,4 @@ h2{
 
 .bullet-list.separator-large li{
   margin-bottom: 6px;
-}
-
-br{
-  margin-top: 1rem;
 }
