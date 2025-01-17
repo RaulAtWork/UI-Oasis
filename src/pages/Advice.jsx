@@ -11,7 +11,7 @@ const sideBarData = [
   },
   {
     section: "Advices",
-    topics: [topicByTitle.separation, topicByTitle.headers],
+    topics: [topicByTitle.separation, topicByTitle.headers, topicByTitle.colors],
   },
 ];
 
