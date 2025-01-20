@@ -11,7 +11,7 @@ const sideBarData = [
   },
   {
     section: "Advices",
-    topics: [topicByTitle.separation, topicByTitle.headers, topicByTitle.colors],
+    topics: [topicByTitle.separation, topicByTitle.headers, topicByTitle.colors, topicByTitle.fonts],
   },
 ];
 
@@ -34,8 +34,6 @@ function Advice() {
       />
     </div>
   );
-
-  return <h1>Advice</h1>;
 }
 
 export default Advice;

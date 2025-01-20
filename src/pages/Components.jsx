@@ -12,7 +12,7 @@ const sideBarData = [
   },
   {
     section: "Components",
-    topics: [topicByTitle.buttons],
+    topics: [topicByTitle.buttons, topicByTitle.externallink],
   },
   {
     section: "Advance Components",

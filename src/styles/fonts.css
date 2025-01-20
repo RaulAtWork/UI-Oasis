@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Cantarell";
+    src: url('/fonts/Cantarell-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url('/fonts/NotoSans-VariableFont_wdth\,wght.ttf');
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('/fonts/Roboto-VariableFont_wdth\,wght.ttf');
+}
+@font-face {
+    font-family: "Segoe UI";
+    src: url('/fonts/SegoeUIVF.ttf');
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url('/fonts/Ubuntu-Regular.ttf');
+}

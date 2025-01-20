@@ -6,6 +6,8 @@ import A_Introduction from "./Advice/A_Introduction";
 import A_Separation from "./Advice/A_Separation";
 import A_Headers from "./Advice/A_Headers";
 import A_Colors from "./Advice/A_Colors";
+import A_Fonts from "./Advice/A_Fonts";
+import C_ExternalLink from "./Components/C_ExternalLink";
 
 const componentPath = "/components/";
 const advicePath = "/advice/";
@@ -33,19 +35,29 @@ export const topicByTitle = {
     name: "introduction",
     link: advicePath + "advice_intro",
   },
-  separation:{
-    component: <A_Separation/>,
+  separation: {
+    component: <A_Separation />,
     name: "Margin and Padding",
-    link: advicePath + "separation"
-  }, 
-  headers:{
-    component: <A_Headers/>,
-    name: "Headers",
-    link: advicePath + "headers"
+    link: advicePath + "separation",
   },
-  colors:{
-    component: <A_Colors/>,
+  headers: {
+    component: <A_Headers />,
+    name: "Headers",
+    link: advicePath + "headers",
+  },
+  colors: {
+    component: <A_Colors />,
     name: "Color Shades",
-    link: advicePath + "colors"
-  }
+    link: advicePath + "colors",
+  },
+  fonts: {
+    component: <A_Fonts />,
+    name: "Fonts",
+    link: advicePath + "fonts",
+  },
+  externallink: {
+    component: <C_ExternalLink />,
+    name: "External Link",
+    link: componentPath + "externallink",
+  },
 };
