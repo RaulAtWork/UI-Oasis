@@ -1,0 +1,46 @@
+
+.container {
+    max-width: 1000px;
+    display: flex;
+    flex: 1;
+    padding: var(--padding-xl);
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* We remove the header height to cover all the page. Header height = header paddign x2 + bottom border */
+    min-height: calc(100vh - 65px);
+  }
+  
+  
+  
+  .component-details{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .link-external{
+    color: #41adff;
+  }
+  
+  .link-external svg{
+    margin-left: 4px;
+  }
+  
+  .bullet-list{
+    list-style-type: circle;
+    list-style-position: inside;
+    padding-left: 6px;
+  }
+
+  .bullet-list li{
+    padding-left: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .bullet-list.separator-large li{
+    margin-bottom: 6px;
+  }
+  

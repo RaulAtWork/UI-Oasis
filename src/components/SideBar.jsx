@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Collapsible from "./Collapsible";
 
-function SideBar({ data, border }) {
+function SideBar({ data, border, currentTitle }) {
   /*data: [{section: XXX, topics: [
                 {name: XXX, link: XXX},
                 {name: XXX, link: XXX},...
@@ -18,7 +18,18 @@ function SideBar({ data, border }) {
         {data.map((item, index) => (
           <li key={index} className="level-1">
             <Collapsible open="false" title={item.section}>
-              <Topics topics={item.topics} />
+              <ul>
+                {item.topics.map((t, index) => (
+                  <li
+                    className={`level-2 ${
+                      t.name === currentTitle ? "active" : ""
+                    }`}
+                    key={index + "_" + t.name}
+                  >
+                    <Link to={t.link}>{t.name}</Link>
+                  </li>
+                ))}
+              </ul>
             </Collapsible>
           </li>
         ))}
@@ -28,15 +39,3 @@ function SideBar({ data, border }) {
 }
 
 export default SideBar;
-
-function Topics({ topics }) {
-  return (
-    <ul>
-      {topics.map((t, index) => (
-        <li className="level-2" key={index}>
-          <Link to={t.link}>{t.name}</Link>
-        </li>
-      ))}
-    </ul>
-  );
-}

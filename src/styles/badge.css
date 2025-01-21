@@ -1,7 +1,7 @@
 .badge{
     background-color: var(--color-neutral-400);
     color: white;
-    padding: var(--padding-s);
+    padding: var(--padding-xxs);
     border-radius: 5px;
     font-weight: bold;
 }

@@ -28,7 +28,7 @@ const tabbedData = [{ title: "CSS", codeString: codeCSS, language: "css" }];
 function A_Colors() {
   return (
     <article className="component-details">
-      <h1>Color Shades</h1>
+      <h1>COLOR SHADES</h1>
       <p>
         To create a diverse palette of color shades, we recommend generating{" "}
         <b>8 to 10 shades</b> of the same color. When selecting a shade{" "}

@@ -16,7 +16,7 @@ const sideBarData = [
   },
   {
     section: "Advance Components",
-    topics: [topicByTitle.code, topicByTitle.sidebar],
+    topics: [topicByTitle.code],
   },
 ];
 
@@ -30,7 +30,7 @@ function Components() {
 
   return (
     <div className="main-content">
-      <SideBar data={sideBarData} border="right" />
+      <SideBar data={sideBarData} border="right" currentTitle={topicByTitle[title]?.name} />
       <main className="container">{currentComponent}</main>
       <OnThisPage
         trackedComponent={currentComponent}

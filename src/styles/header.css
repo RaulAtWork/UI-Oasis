@@ -1,6 +1,6 @@
 header{
     border-bottom: 1px solid white;
-    padding: var(--padding-l);
+    padding: var(--padding-xl);
     height: var(--header-height);
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@ header{
 
 
 .header-title{
-    margin-right: var(--margin-m);
+    margin-right: var(--margin-s);
 }
 
 .header-nav ul{

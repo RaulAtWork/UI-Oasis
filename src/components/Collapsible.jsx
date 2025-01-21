@@ -1,8 +1,13 @@
-import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import {
+  faChevronDown,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from "react";
 
-const Collapsible = ({ title, children, open=true }) => {
+import './Collapsible.css'
+
+const Collapsible = ({ title, children, open = true }) => {
   // Open by default but configurable based on props
   const [isOpen, setIsOpen] = useState(open);
 
@@ -12,7 +17,14 @@ const Collapsible = ({ title, children, open=true }) => {
 
   return (
     <div>
-      <div onClick={toggleCollapse}>{isOpen ? <FontAwesomeIcon icon={faChevronDown} className='fa-icon'/> : <FontAwesomeIcon icon={faChevronRight} className='fa-icon'/>}{title}</div>
+      <div onClick={toggleCollapse} className={`collapsible ${isOpen ? "open" : "closed"}`}>
+        {title}
+        {isOpen ? (
+          <FontAwesomeIcon icon={faChevronDown} className="fa-icon" />
+        ) : (
+          <FontAwesomeIcon icon={faChevronRight} className="fa-icon" />
+        )}
+      </div>
       {isOpen && children}
     </div>
   );

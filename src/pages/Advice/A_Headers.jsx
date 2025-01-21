@@ -3,7 +3,7 @@ import "./A_Headers.css";
 function A_Headers() {
   return (
     <article className="component-details">
-      <h1>Headers</h1>
+      <h1>HEADERS</h1>
       <h2>line-height</h2>
       <div className="lh-headers">
         <p>

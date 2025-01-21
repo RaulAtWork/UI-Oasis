@@ -1,9 +1,10 @@
 .side-bar{
     width: 300px;
     height: calc(100vh - 65px);
-    padding: var(--padding-l);
+    padding: var(--padding-xl);
     position: sticky;
     top:65px;
+    gap: var(--separation-s);
 }
 
 .side-bar.l-border{
@@ -17,11 +18,15 @@
 
 
 .side-list ul{
-    padding-left: var(--padding-l);
+    padding-left: var(--padding-xl);
 }
 
 .side-list li{
     cursor: pointer;
+}
+
+.side-list li.active{
+    color: white;
 }
 
 .side-list .level-1{

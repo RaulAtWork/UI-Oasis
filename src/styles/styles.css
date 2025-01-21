@@ -12,50 +12,26 @@ button{
   cursor: pointer;
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-family: "Noto Sans";
+  line-height: 2;
+} 
+
 h1{
-  font-size: 40px;
+  font-size: 45px;
+  letter-spacing: 2px;
 }
 
-h2, h3{
-  margin-top: var(--margin-l);
+h2, h3, h4, h5, h6{
+  font-size: 30px;
+  margin-top: var(--margin-xl);
 }
 
-.container {
-  max-width: 1000px;
-  display: flex;
-  flex: 1;
-  padding: var(--padding-l);
+p, ul{
+  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
-.main-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  /* We remove the header height to cover all the page. Header height = header paddign x2 + bottom border */
-  min-height: calc(100vh - 65px);
-}
-
-
-
-.component-details{
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.link-external{
-  color: #41adff;
-}
-
-.link-external svg{
-  margin-left: 4px;
-}
-
-.bullet-list{
-  list-style-type: circle;
-  list-style-position: inside;
-  padding-left: 6px;
-}
-
-.bullet-list.separator-large li{
-  margin-bottom: 6px;
+b{
+  font-weight: 700;
 }

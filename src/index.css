@@ -1,5 +1,7 @@
 @import './styles/reset.css';
+@import './styles/separators.css';
 @import './styles/fonts.css';
+@import './styles/conatiner.css';
 @import './styles/header.css';
 @import './styles/sidebar.css';
 @import './styles/icon.css';
@@ -7,15 +9,14 @@
 @import './styles/styles.css';
 
 :root{
-  --padding-s: 4px;
-  --padding-m: 10px;
-  --padding-l: 32px;
-  --padding-xl: 50px;
 
-  --margin-s: 6px;
-  --margin-m: 10px;
-  --margin-l: 32px;
-  --margin-xl:40px;
+  --separation-xxs: 4px;
+  --separation-xs: 8px;
+  --separation-s: 12px;
+  --separation-m: 16px;
+  --separation-l: 24px;
+  --separation-xl: 32px;
+  --separation-xxl: 48px;
 
   --header-height: 50px;
 

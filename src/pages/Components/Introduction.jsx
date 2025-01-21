@@ -3,7 +3,7 @@ import React from "react";
 function Introduction() {
   return (
     <article className="component-details">
-      <h1>Introduction</h1>
+      <h1>INTRODUCTION</h1>
       <p>
         Our gallery features a curated collection of the most commonly used
         components on the web, each accompanied by a <b>preview</b> and its

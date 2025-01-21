@@ -59,7 +59,7 @@ const tabbedCodeData = [{ title: "CSS", codeString: codeCSS, language: "css" }];
 function C_Buttons() {
   return (
     <article className="component-details">
-      <h1>Buttons</h1>
+      <h1>BUTTONS</h1>
       <p>
         Buttons have 3 levels of importance:
         <ul className="bullet-list">

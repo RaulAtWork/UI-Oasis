@@ -63,7 +63,7 @@ export const codeCSS = `.code-syntax{
 
 .code-syntax .code-header{
     background-color: hsl(0, 0%, 20%);
-    padding: var(--padding-s) var(--padding-m);
+    padding: var(--padding-xxs) var(--padding-s);
     display: flex;
 }
 
@@ -74,8 +74,8 @@ export const codeCSS = `.code-syntax{
 }
 
 .code-title{
-    margin-right: var(--margin-s);
-    padding: var(--padding-s);
+    margin-right: var(--margin-xs);
+    padding: var(--padding-xxs);
 }
 
 .code-title.active{

@@ -14,7 +14,7 @@ const libData = [LIBRARY.FONTAWESOME, LIBRARY.COPYTOCLIPBOARD, LIBRARY.SYNTAXHIG
 function C_Code() {
   return (
     <article className="component-details">
-      <h1>Code with colored syntax</h1>
+      <h1>CODE WITH COLORED SYNTAX</h1>
       <p>Code preview that can support most of languages.
         Has tabs and user is able to copy the code.
       </p>

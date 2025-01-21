@@ -32,7 +32,7 @@ export const topicByTitle = {
   code: { component: <C_Code />, name: "Code", link: componentPath + "code" },
   advice_intro: {
     component: <A_Introduction />,
-    name: "introduction",
+    name: "Introduction",
     link: advicePath + "advice_intro",
   },
   separation: {

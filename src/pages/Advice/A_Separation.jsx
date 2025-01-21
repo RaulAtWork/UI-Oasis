@@ -25,7 +25,7 @@ const tabbedData =[{title:"CSS", codeString: codeCSS, language: "css"}]
 function A_Separation() {
   return (
     <article className="component-details">
-      <h1>Margin and Padding</h1>
+      <h1>MARGIN AND PADDING</h1>
       <p>
         When deciding on separation in terms of padding and margin, it is always
         beneficial to have predefined sizes for separation. We recommend 3
