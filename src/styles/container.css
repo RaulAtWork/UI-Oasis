@@ -24,8 +24,13 @@
   flex: 1;
 }
 .link-external {
-  color: #41adff;
+  color: hsl(206, 100%, 63%);
 }
+.link-external:hover {
+  color: hsl(206, 100%, 83%);
+}
+
+.
 
 .link-external svg {
   margin-left: 4px;
@@ -73,11 +78,11 @@
   align-items: center;
   position: absolute;
   bottom: 0;
-  background-image: radial-gradient(#3b3b3b 0.5px, #0e0d0d 0.5px);
+  background-image: radial-gradient(rgba(59, 59, 59, 0.9) 0.5px, rgba(14, 13, 13, 0.9) 0.5px);
   background-size: 10px 10px;
   width: 100vw;
   height: 200px;
-  padding: var(--padding-xxl)
+  padding: var(--padding-xxl);
 }
 
 .home-buttons{

@@ -1,7 +1,10 @@
 import ExternalLink from "../components/ExternalLink";
+import { useNavigate } from "react-router-dom";
 
 
 function Home() {
+  let navigate = useNavigate();
+  
   return (
     <main className="home-page">
       <div className="home-title">
