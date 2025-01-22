@@ -77,10 +77,10 @@ function C_Buttons() {
       </p>
       <h2>Preview</h2>
       <div className="button-list">
-        <button className="button-primary"> Primary </button>
-        <button className="button-outline"> Outline </button>
-        <button className="button-secondary"> Secondary </button>
-        <button className="button-tertiary"> Tertiary </button>
+        <button className="cbutton-primary"> Primary </button>
+        <button className="cbutton-outline"> Outline </button>
+        <button className="cbutton-secondary"> Secondary </button>
+        <button className="cbutton-tertiary"> Tertiary </button>
       </div>
       <h2>Code</h2>
       <TabbedCodeSyntax data={tabbedCodeData}></TabbedCodeSyntax>

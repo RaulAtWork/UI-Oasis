@@ -1,0 +1,16 @@
+.button-outline{
+    padding: var(--padding-xs);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button-outline{
+    padding: calc(var(--padding-xs) - 2px);
+    border: 2px solid var(--main-color-200);
+    color: var(--main-color-200);
+}
+
+.button-outline:hover{
+    background-color: var(--main-color-200);
+    color: white;
+}

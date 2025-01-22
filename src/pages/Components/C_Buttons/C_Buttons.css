@@ -14,44 +14,44 @@
 }
 
 /* Shared Code for all buttons*/
-.button-primary,.button-outline,
-.button-secondary,.button-tertiary {
+.cbutton-primary,.cbutton-outline,
+.cbutton-secondary,.cbutton-tertiary {
     padding: var(--padding-button);
     border-radius: 5px;
     font-weight: bold;
 }
 
 /* Primary button, a darker color when hovered*/
-.button-primary {
+.cbutton-primary {
   background-color: var(--shade-300);
 }
-.button-primary:hover{
+.cbutton-primary:hover{
     background-color: var(--shade-100);
 }
 
 /* Outline button, same color as primary,
  same look as primary when hovered*/
-.button-outline {
+.cbutton-outline {
   padding: calc(var(--padding-button) - 2px);
   border: 2px solid var(--shade-300);
   color: var(--shade-300);
 }
-.button-outline:hover{
+.cbutton-outline:hover{
     background-color: var(--shade-300);
     color: white;
 }
 
 /* Secondary button, filled with darken background,
  lighter shade when hovered*/
-.button-secondary {
+.cbutton-secondary {
     background-color: var(--shade-50);
     color: white;
 }
-.button-secondary:hover{
+.cbutton-secondary:hover{
     background-color: var(--shade-100);
 }
 
 /* Tertiary button, normal look, but changes the color on hover*/
-.button-tertiary:hover {
+.cbutton-tertiary:hover {
     color: var(--shade-100)
 }

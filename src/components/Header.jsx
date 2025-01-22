@@ -9,7 +9,12 @@ const NAVIGATION_LINKS = [
 function Header() {
   return (
     <header>
-      <span className="header-title">UI Oasis v0.1</span>
+      <span className="header-title">
+        <NavLink to={NAVIGATION_LINKS[0].path}>
+          <img className="header-logo" src="/images/OasisUI_Logo.png" /> v0.1
+        </NavLink>
+      </span>
+
       <nav className="header-nav">
         <ul>
           {NAVIGATION_LINKS.map((item, index) => (
