@@ -2,11 +2,13 @@ html {
   background-image: radial-gradient(#3b3b3b 0.5px, #0e0d0d 0.5px);
   background-size: 10px 10px;
   color: white;
+  
 }
 
 #root {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 button{

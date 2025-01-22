@@ -1,8 +1,18 @@
-.button-outline{
+.button-outline, .button-primary{
     padding: var(--padding-xs);
     border-radius: 5px;
     font-weight: bold;
 }
+
+/* Primary button, a darker color when hovered*/
+.button-primary {
+    background-color: var(--main-color-100);
+  }
+  .button-primary:hover{
+      background-color: var(--main-color-400);
+      color: black;
+  }
+
 
 .button-outline{
     padding: calc(var(--padding-xs) - 2px);
