@@ -3,6 +3,7 @@ import { topicByTitle } from "./Topic.Titles";
 import OnThisPage from "../components/OnThisPage";
 import SideBar from "../components/SideBar";
 import { useEffect, useState } from "react";
+import Footer from "../components/Footer";
 
 const sideBarData = [
   {
@@ -11,7 +12,12 @@ const sideBarData = [
   },
   {
     section: "Advices",
-    topics: [topicByTitle.separation, topicByTitle.headers, topicByTitle.colors, topicByTitle.fonts],
+    topics: [
+      topicByTitle.separation,
+      topicByTitle.headers,
+      topicByTitle.colors,
+      topicByTitle.fonts,
+    ],
   },
 ];
 
@@ -21,12 +27,20 @@ function Advice() {
 
   useEffect(() => {
     setCurrentComponent(topicByTitle[title]?.component);
+    window.scrollTo(0, 0);
   }, [title]);
 
   return (
     <div className="main-content">
-      <SideBar data={sideBarData} border="right" currentTitle={topicByTitle[title]?.name}/>
-      <main className="container">{currentComponent}</main>
+      <SideBar
+        data={sideBarData}
+        border="right"
+        currentTitle={topicByTitle[title]?.name}
+      />
+      <div className="container">
+        <main className="middle-content">{currentComponent}</main>
+        <Footer />
+      </div>
       <OnThisPage
         trackedComponent={currentComponent}
         querySelector="article.component-details h2"
@@ -37,3 +51,4 @@ function Advice() {
 }
 
 export default Advice;
+export const topicsOnAdvice = sideBarData
