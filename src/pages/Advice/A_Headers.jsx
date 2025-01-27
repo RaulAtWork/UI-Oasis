@@ -33,8 +33,11 @@ function A_Headers() {
           must compress the letter for better readability.
         </p>
         <br />
+        <p className="no-bottom secondary-text-s">Normal version</p>
         <h3 className="lower-normal">How to Create your own Portfolio</h3>
+        <p className="no-bottom secondary-text-s">Compressed version</p>
         <h3 className="lower-improved">How to Create your own Portfolio</h3>
+        <p className="no-bottom secondary-text-s">Compressed with proper font</p>
         <h3 className="lower-font">How to Create your own Portfolio</h3>
         <br />
         <p>
@@ -42,12 +45,13 @@ function A_Headers() {
           enough space between letters for better readability.
         </p>
         <br />
+        <p className="no-bottom secondary-text-s">Normal version</p>
         <h3 className="upper-normal">FRONT END DEVELOPER</h3>
+        <p className="no-bottom secondary-text-s">Expanded version</p>
         <h3 className="upper-improved">FRONT END DEVELOPER</h3>
+        <p className="no-bottom secondary-text-s">Expanded with proper font</p>
         <h3 className="upper-font">FRONT END DEVELOPER</h3>
       </div>
-      <h2>font-family</h2>
-      <p>Your titles can vary heavily based on the font type</p>
     </article>
   );
 }

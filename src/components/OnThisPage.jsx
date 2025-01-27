@@ -35,7 +35,14 @@ function OnThisPage({ trackedComponent, querySelector, border }) {
 
   const scrollToSection = (index) => {
     if (sections[index]) {
-      sections[index].scrollIntoView({ behavior: "smooth" });
+      var offset = 64
+      var elementPosition = sections[index].getBoundingClientRect().top
+      var truePosition = elementPosition + window.scrollY - offset
+      window.scrollTo({
+        top: truePosition,
+        behavior: "smooth"
+      })
+      //sections[index].scrollIntoView({ behavior: "smooth" });
     }
   };
 

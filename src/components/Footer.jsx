@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { topicsOnAdvice } from "../pages/Advice";
+import { topicsOnUIUX } from "../pages/UIUX";
 import { topicsOnComponents } from "../pages/Components";
 
 
@@ -52,14 +52,14 @@ function Footer() {
         </div>
       </div>
 
-      <p className="secondary-text">
+      <p className="secondary-text-s">
         Support the project at{" "}
         <ExternalLink
           link="https://github.com/RaulAtWork/UI-Oasis"
           display="Github"
         />
       </p>
-      <p className="secondary-text">
+      <p className="secondary-text-s">
         Made with <FontAwesomeIcon icon={faHeart} /> by Raul Escabia
       </p>
     </footer>
@@ -95,8 +95,8 @@ function getPreviousAndNextTopic(currentLocation) {
       }
     });
   }
-  if (currentLocation.includes("advice")) {
-    Object.values(topicsOnAdvice).forEach((s) => {
+  if (currentLocation.includes("uiux")) {
+    Object.values(topicsOnUIUX).forEach((s) => {
       for (let i = 0; i < s.topics.length; i++) {
         if (s.topics[i].link === currentLocation) {
           // we have identified the current location

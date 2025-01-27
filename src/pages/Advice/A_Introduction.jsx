@@ -5,14 +5,14 @@ function A_Introduction() {
     <article className="component-details">
       <h1>INTRODUCTION</h1>
       <div>
-
-      <p>
-        Welcome to the Advice Section, you will find tips and tricks regarding
-        styling and consistency on web programming. On each section we will
-        visit 'guidelines' of how to make consistent and appealing styling.
-      </p>
-        <br/>
-      <p>Start navigating topics</p>
+        <p>
+          Welcome to the <b>UI/UX</b> Section! Here, you will find valuable tips and
+          tricks related to styling and consistency in UI/UX design. In each
+          section, we will explore <b>guidelines</b> on how to achieve consistent,
+          scalable, and visually appealing styling.
+        </p>
+        <br />
+        <p>Start navigating topics</p>
       </div>
     </article>
   );

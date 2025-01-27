@@ -61,7 +61,7 @@ function C_Buttons() {
     <article className="component-details">
       <h1>BUTTONS</h1>
       <p>
-        Buttons have 3 levels of importance:
+        Buttons usually have 3 levels of importance:
         <ul className="bullet-list">
           <li>
             <b>Primary</b>: Main button that gets highlighted.

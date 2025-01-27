@@ -12,9 +12,25 @@ header {
 
 }
 
+.header-title a {
+	display: flex;
+	align-items: end;
+  flex-direction: row;
+  margin-right: var(--margin-m);
+}
+
+
+
 .header-title {
   margin-right: var(--margin-s);
   color: var(--color-neutral-400);
+}
+
+
+.header-nav{
+  height: var(--header-height);
+  display: flex;
+  align-items: end;
 }
 
 .header-nav ul {

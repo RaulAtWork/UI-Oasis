@@ -10,7 +10,7 @@ import A_Fonts from "./Advice/A_Fonts";
 import C_ExternalLink from "./Components/C_ExternalLink";
 
 const componentPath = "/components/";
-const advicePath = "/advice/";
+const advicePath = "/uiux/";
 
 export const topicByTitle = {
   // section: {component, name, link}

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const NAVIGATION_LINKS = [
   { path: "/", name: "Home" },
   { path: "/components", name: "Components" },
-  { path: "/advice", name: "Advice" },
+  { path: "/uiux", name: "UI/UX" },
 ];
 
 function Header() {
@@ -11,7 +11,7 @@ function Header() {
     <header>
       <span className="header-title">
         <NavLink to={NAVIGATION_LINKS[0].path}>
-          <img className="header-logo" src="/images/OasisUI_Logo.png" /> v0.1
+          <img className="header-logo" src="/images/OasisUI_Logo.png" /> <span>v1.0</span>
         </NavLink>
       </span>
 

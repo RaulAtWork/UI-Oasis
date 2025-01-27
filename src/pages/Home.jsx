@@ -24,9 +24,9 @@ function Home() {
           </button>
           <button
             className="button-primary"
-            onClick={() => navigate("/advice")}
+            onClick={() => navigate("/uiux")}
           >
-            Check out advices!{" "}
+            Check out UI/UX!{" "}
           </button>
         </div>
         <p>

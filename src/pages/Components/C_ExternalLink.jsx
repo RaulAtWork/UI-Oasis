@@ -31,9 +31,14 @@ function C_ExternalLink() {
   return (
     <article className="component-details">
       <h1> EXTERNAL LINK </h1>
+      <p>
+        An <b>external link</b> informs the user that they will be navigating to a
+        webpage outside of the current site. This is important for providing
+        transparency and ensuring users are <b>aware of their performed actions</b>.
+      </p>
       <h2> Preview </h2>
       <ExternalLink
-        display="This is a link to google."
+        display="This is a link to google"
         link="http://www.google.com"
       />
       <h2> Code </h2>

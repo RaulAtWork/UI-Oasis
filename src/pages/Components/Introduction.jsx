@@ -7,9 +7,11 @@ function Introduction() {
       <p>
         Our gallery features a curated collection of the most commonly used
         components on the web, each accompanied by a <b>preview</b> and its
-        corresponding <b>code and styling</b>. Whether you're a seasoned
-        developer or just starting out, our goal is to provide you with a solid
-        foundation to create your own components.
+        corresponding <b>code and styling</b>. Whether you're a seasoned developer or
+        just starting out, our goal is to provide you with a solid foundation to
+        create your own components. This section aims to demonstrate how
+        components are built, empowering you to <b>create your own custom ones</b>. 
+  
       </p>
       <br />
       <br />

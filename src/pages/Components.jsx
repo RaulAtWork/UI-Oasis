@@ -27,8 +27,12 @@ function Components() {
 
   useEffect(() => {
     setCurrentComponent(topicByTitle[title]?.component);
-    window.scrollTo(0, 0);
   }, [title]);
+
+
+  useEffect(()=>{
+    window.scrollTo({top: 0, left:0, behavior: "smooth"});
+  }, [currentComponent])
 
   return (
     <div className="main-content">

@@ -2,3 +2,14 @@
     height: 20px;
     width: 50px;
 }
+
+.grid-color{
+    grid-template-columns: 60px 1fr;
+    width:240px;
+}
+
+.shades-showcase{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -29,7 +29,7 @@ function TabbedCodeSyntax({ data }) {
     <div className="code-syntax">
       {/*Header*/}
       <div className="code-header">
-        {data.map((element, index)=>(<button className={`code-title ${index === currentTab && "active"}`} onClick={()=>onTabChanged(index)}>{element.title}</button>))}
+        {data.map((element, index)=>(<button key={index + element.title} className={`code-title ${index === currentTab && "active"}`} onClick={()=>onTabChanged(index)}>{element.title}</button>))}
         <CopyToClipboard text={data[currentTab].codeString} onCopy={() => setCopied(true)}>
           <button className="code-copy">
             <FontAwesomeIcon className="fa-icon" icon={faCopy} />

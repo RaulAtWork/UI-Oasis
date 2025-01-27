@@ -12,8 +12,8 @@ function A_Fonts() {
       <h1>FONTS</h1>
       <p>
         Fonts give personality to your website. If you're looking for a quick
-        setup, try using the following font stack —you may need to add the font
-        to your web—:
+        setup, try using the following font stack <span className="secondary-text">—you may need to add the font
+        to your web—</span>:
       </p>
       <TabbedCodeSyntax data={tabbedData} />
       <h2>Preview</h2>
@@ -37,30 +37,27 @@ function A_Fonts() {
         <li>
           <b>Segoe UI</b>: This font is widely recognized for its clean and
           modern appearance, making it an excellent choice for user interfaces.
-          It’s the default font for Microsoft products, ensuring familiarity and
-          readability.
+          <span className="secondary-text"> It’s the default font for Microsoft products, ensuring familiarity and
+          readability.</span>
         </li>
         <li>
           <b>Roboto</b>: Developed by Google, Roboto is designed for optimal
-          readability on screens. Its geometric shapes and friendly curves make
-          it versatile for both headings and body text, which is why it’s
-          commonly used in Android applications.
+          readability on screens. <span className="secondary-text">It is why it’s
+          commonly used in Android applications.</span>
         </li>
         <li>
           <b>Noto Sans</b>: This font aims to achieve visual harmony by
-          supporting multiple languages and scripts. It’s a great choice for
-          websites that cater to a diverse audience, ensuring that text remains
-          legible and aesthetically pleasing.
+          supporting multiple languages and scripts.
         </li>
         <li>
           <b>Ubuntu</b>: The Ubuntu font family is known for its distinctive and
-          modern look. It’s designed to be used on screens, making it a solid
-          choice for web design.
+          modern look. <span className="secondary-text">It’s designed to be used on screens, making it a solid
+          choice for web design.</span>
         </li>
         <li>
           <b>Cantarell</b>: This font is designed for clarity and legibility,
-          particularly at smaller sizes. It’s often used in user interfaces and
-          is a good option for body text.
+          particularly at smaller sizes. <span className="secondary-text"> It’s often used in user interfaces and
+          is a good option for body text.</span>
         </li>
       </ul>
 
@@ -70,37 +67,37 @@ function A_Fonts() {
           <b>Serif</b>: Serif fonts are characterized by small lines or
           decorative strokes at the ends of their letters. They are often seen
           as traditional and formal, making them suitable for print materials
-          like books and newspapers. Examples include Times New Roman and
-          Georgia. Best used for: Long texts, formal documents, and print media.
+          like books and newspapers.<span className="secondary-text"> Examples include Times New Roman and
+          Georgia. Best used for: Long texts, formal documents, and print media.</span>
         </li>
         <li>
           <b>Sans Serif</b>: Sans serif fonts lack the decorative strokes found
           in serif fonts, giving them a clean and modern appearance. They are
           highly legible on screens, which makes them popular for web design.
-          Examples include Arial, Helvetica, and Roboto. Best used for:
-          Websites, digital interfaces, and informal documents.
+          <span className="secondary-text"> Examples include Arial, Helvetica, and Roboto. Best used for:
+          Websites, digital interfaces, and informal documents.</span>
         </li>
         <li>
           <b>Script</b>: Script fonts mimic handwritten text and often have a
           flowing, cursive style. They can convey elegance and creativity,
           making them ideal for invitations, greeting cards, and branding.
-          Examples include Brush Script and Pacifico. Best used for:
-          Invitations, logos, and decorative purposes.
+          <span className="secondary-text">Examples include Brush Script and Pacifico. Best used for:
+          Invitations, logos, and decorative purposes.</span>
         </li>
         <li>
           <b>Display</b>: Decorative fonts are highly stylized and often used
           for specific themes or artistic expressions. They can be playful,
           quirky, or thematic, but should be used sparingly to avoid
-          overwhelming the viewer. Examples include Comic Sans and Impact. Best
-          used for: Headlines, posters, and special occasions.
+          overwhelming the viewer. <span className="secondary-text">Examples include Comic Sans and Impact. Best
+          used for: Headlines, posters, and special occasions.</span>
         </li>
         <li>
           <b>Monospaced</b>: Courier. Monospaced fonts, also known as
           fixed-width fonts, are characterized by each character occupying the
           same amount of horizontal space. This uniformity makes them
           particularly useful in coding and technical applications, as it allows
-          for easy alignment of text and code. Best uses: Programming code,
-          Terminal emulators, Data bases
+          for easy alignment of text and code.<span className="secondary-text"> Best uses: Programming code,
+          Terminal emulators, Data bases</span>
         </li>
       </ul>
     </article>

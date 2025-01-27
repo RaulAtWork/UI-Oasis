@@ -11,7 +11,7 @@ const sideBarData = [
     topics: [topicByTitle.advice_intro],
   },
   {
-    section: "Advices",
+    section: "CSS Set Up",
     topics: [
       topicByTitle.separation,
       topicByTitle.headers,
@@ -21,14 +21,17 @@ const sideBarData = [
   },
 ];
 
-function Advice() {
+function UIUX() {
   let { title } = useParams();
   const [currentComponent, setCurrentComponent] = useState();
 
   useEffect(() => {
     setCurrentComponent(topicByTitle[title]?.component);
-    window.scrollTo(0, 0);
   }, [title]);
+
+  useEffect(()=>{
+    window.scrollTo({top: 0, left:0, behavior: "smooth"});
+  }, [currentComponent])
 
   return (
     <div className="main-content">
@@ -50,5 +53,5 @@ function Advice() {
   );
 }
 
-export default Advice;
-export const topicsOnAdvice = sideBarData
+export default UIUX;
+export const topicsOnUIUX = sideBarData

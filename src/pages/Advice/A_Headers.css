@@ -1,3 +1,9 @@
+.lh-headers h1, .lh-headers h2, .lh-headers h3,
+.ls-headers h1, .ls-headers h2, .ls-headers h3{
+    color: aqua;
+}
+
+
 .lh-headers h3{
     margin-top: 0;
 }
@@ -16,10 +22,15 @@
 }
 
 
-.ls-headers .lower-improved{
+.ls-headers .lower-normal, .ls-headers .lower-improved, .ls-headers .upper-normal, .ls-headers .upper-improved{
+    font-family: "Ubuntu";
+}
+
+.ls-headers .lower-improved, .ls-headers .lower-font{
     letter-spacing: -0.05em;
 }
-.ls-headers .upper-improved{
+
+.ls-headers .upper-improved, .ls-headers .upper-font{
     letter-spacing: +0.05em;
 }
 

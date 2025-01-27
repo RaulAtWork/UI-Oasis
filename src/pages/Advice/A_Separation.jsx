@@ -10,7 +10,7 @@ const separationList = [
   { size: "32px", calculation: "16 x 2", className: "w-xl", display: "XL" },
   { size: "48px", calculation: "16 x 3", className: "w-xxl", display: "XXL" },
 ];
-const codeCSS=`:root{
+const codeCSS = `:root{
     --separation-xxs: 4px;
     --separation-xs: 8px;
     --separation-s: 12px;
@@ -18,9 +18,9 @@ const codeCSS=`:root{
     --separation-l: 24px;
     --separation-xl: 32px;
     --separation-xxl: 48px;
-}`
+}`;
 
-const tabbedData =[{title:"CSS", codeString: codeCSS, language: "css"}] 
+const tabbedData = [{ title: "CSS", codeString: codeCSS, language: "css" }];
 
 function A_Separation() {
   return (
@@ -28,14 +28,21 @@ function A_Separation() {
       <h1>MARGIN AND PADDING</h1>
       <p>
         When deciding on separation in terms of padding and margin, it is always
-        beneficial to have predefined sizes for separation. We recommend 3
-        small, 1 medium, and 3 large sizes, for a total of 7 separation sizes.
-        In this particular example, we have chosen the medium size to be 16px.
-        To determine the smaller sizes, we will multiply the medium size by 0.X,
-        where the result is a whole number. The same process will be applied to
-        determine the larger sizes.
+        beneficial to have predefined sizes for consistency. We recommend using{" "}
+        <b>three small, one medium, and three large</b> sizes, resulting in a
+        total of seven separation sizes.
       </p>
       <h2>Preview</h2>
+      <p>
+        In this example, we have chosen the medium size to be 16px.
+        <br />
+        To determine the <b>smaller</b> sizes, multiply the medium size by{" "}
+        <b>0.X</b>, where the result is a whole number. The <b>same process</b>{" "}
+        applies to establish the <b>larger</b> sizes. This approach ensures a
+        harmonious and scalable design, making it easier to maintain consistency
+        across your UI elements.
+      </p>
+      <br />
       {separationList.map((elem, index) => (
         <SeparationPreview
           size={elem.size}
@@ -45,7 +52,7 @@ function A_Separation() {
         />
       ))}
       <h2>Code</h2>
-      <TabbedCodeSyntax data={tabbedData}/>
+      <TabbedCodeSyntax data={tabbedData} />
     </article>
   );
 }
@@ -54,7 +61,7 @@ export default A_Separation;
 
 function SeparationPreview({ displayName, size, calculation, className }) {
   return (
-    <div className="separation-preview">
+    <div className="separation-preview" key={displayName}>
       <span>{displayName}</span>
       <span>
         <b>{size}</b> ({calculation}){" "}

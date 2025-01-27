@@ -2,7 +2,6 @@ html {
   background-image: radial-gradient(#3b3b3b 0.5px, #0e0d0d 0.5px);
   background-size: 10px 10px;
   color: white;
-  
 }
 
 #root {
@@ -11,36 +10,46 @@ html {
   min-height: 100vh;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Noto Sans";
   line-height: 2;
   color: var(--main-color-300);
-} 
+}
 
-h1{
+h1 {
   font-size: 45px;
   letter-spacing: 2px;
 }
 
-h2, h3, h4, h5, h6{
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 30px;
   margin-top: var(--margin-xl);
 }
 
-p, ul{
+p,
+ul {
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
 
-b{
+b {
   font-weight: 700;
 }
 
-footer{
+footer {
   padding-top: var(--padding-xl);
   margin-top: var(--margin-xxl);
   display: flex;
@@ -49,7 +58,15 @@ footer{
   border-top: dashed 1px var(--color-neutral-400);
 }
 
-.secondary-text{
+.secondary-text-s {
   font-size: 0.8rem;
   color: var(--color-neutral-400);
+}
+
+.secondary-text {
+  color: var(--color-neutral-400);
+}
+
+p.no-bottom {
+  margin-bottom: 0;
 }

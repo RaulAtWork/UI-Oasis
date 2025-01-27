@@ -41,25 +41,49 @@ function A_Colors() {
         in your color selection, ensuring that all shades harmonize beautifully
         while still offering distinct variations.
       </p>
-      <HSL_Color hue="230" saturation="55" lightness="27" />
-      <HSL_Color hue="230" saturation="56" lightness="33" />
-      <HSL_Color hue="230" saturation="51" lightness="42" />
-      <HSL_Color hue="230" saturation="52" lightness="53" />
-      <HSL_Color hue="230" saturation="65" lightness="62" />
-      <HSL_Color hue="230" saturation="63" lightness="66" />
-      <HSL_Color hue="230" saturation="70" lightness="75" />
-      <HSL_Color hue="230" saturation="72" lightness="90" />
-      <HSL_Color hue="230" saturation="87" lightness="96" />
-
-      <HSL_Color hue="214" saturation="22" lightness="16" />
-      <HSL_Color hue="214" saturation="16" lightness="30" />
-      <HSL_Color hue="214" saturation="11" lightness="48" />
-      <HSL_Color hue="214" saturation="16" lightness="63" />
-      <HSL_Color hue="214" saturation="23" lightness="74" />
-      <HSL_Color hue="214" saturation="17" lightness="82" />
-      <HSL_Color hue="214" saturation="23" lightness="88" />
-      <HSL_Color hue="214" saturation="22" lightness="90" />
-      <HSL_Color hue="214" saturation="16" lightness="97" />
+      <h2>Preview</h2>
+      <div className="shades-showcase">
+        <div className="grid-display grid-color">
+          <HSL_Color hue="230" saturation="55" lightness="27" />
+          <span className="secondary-text-s">hsl(230, 55%, 27%)</span>
+          <HSL_Color hue="230" saturation="56" lightness="33" />
+          <span className="secondary-text-s">hsl(230, 56%, 33%)</span>
+          <HSL_Color hue="230" saturation="51" lightness="42" />
+          <span className="secondary-text-s">hsl(230, 51%, 42%)</span>
+          <HSL_Color hue="230" saturation="52" lightness="53" />
+          <span className="secondary-text-s">hsl(230, 52%, 53%)</span>
+          <HSL_Color hue="230" saturation="65" lightness="62" />
+          <span className="secondary-text-s">hsl(230, 65%, 62%)</span>
+          <HSL_Color hue="230" saturation="63" lightness="66" />
+          <span className="secondary-text-s">hsl(230, 63%, 66%)</span>
+          <HSL_Color hue="230" saturation="70" lightness="75" />
+          <span className="secondary-text-s">hsl(230, 70%, 75%)</span>
+          <HSL_Color hue="230" saturation="72" lightness="90" />
+          <span className="secondary-text-s">hsl(230, 72%, 90%)</span>
+          <HSL_Color hue="230" saturation="87" lightness="96" />
+          <span className="secondary-text-s">hsl(230, 687%, 96%)</span>
+        </div>
+        <div className="grid-display grid-color">
+          <HSL_Color hue="214" saturation="22" lightness="16" />
+          <span className="secondary-text-s">hsl(214, 22%, 16%)</span>
+          <HSL_Color hue="214" saturation="16" lightness="30" />
+          <span className="secondary-text-s">hsl(214, 16%, 30%)</span>
+          <HSL_Color hue="214" saturation="11" lightness="48" />
+          <span className="secondary-text-s">hsl(214, 11%, 48%)</span>
+          <HSL_Color hue="214" saturation="16" lightness="63" />
+          <span className="secondary-text-s">hsl(214, 16%, 63%)</span>
+          <HSL_Color hue="214" saturation="23" lightness="74" />
+          <span className="secondary-text-s">hsl(214, 23%, 74%)</span>
+          <HSL_Color hue="214" saturation="17" lightness="82" />
+          <span className="secondary-text-s">hsl(214, 17%, 82%)</span>
+          <HSL_Color hue="214" saturation="23" lightness="88" />
+          <span className="secondary-text-s">hsl(214, 23%, 88%)</span>
+          <HSL_Color hue="214" saturation="22" lightness="90" />
+          <span className="secondary-text-s">hsl(214, 22%, 90%)</span>
+          <HSL_Color hue="214" saturation="16" lightness="97" />
+          <span className="secondary-text-s">hsl(214, 16%, 97%)</span>
+        </div>
+      </div>
 
       <h2>Code</h2>
       <TabbedCodeSyntax data={tabbedData} />
