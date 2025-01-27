@@ -32,7 +32,7 @@ function A_Fonts() {
       <p style={{ fontFamily: "Cantarell" }}>
         The quick brown fox jumps over the lazy dog. Cantarell.
       </p>
-      <h2>Why There Fonts Are the Best Choices?</h2>
+      <h2>Why Those Fonts Are the Best Choices?</h2>
       <ul className="bullet-list">
         <li>
           <b>Segoe UI</b>: This font is widely recognized for its clean and

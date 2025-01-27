@@ -62,6 +62,9 @@ function Footer() {
       <p className="secondary-text-s">
         Made with <FontAwesomeIcon icon={faHeart} /> by Raul Escabia
       </p>
+      <p className="secondary-text-s">
+      MIT License / Copyright (c) 2025 RaulAtWork
+      </p>
     </footer>
   );
 }
