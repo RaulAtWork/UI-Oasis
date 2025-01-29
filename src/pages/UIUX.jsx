@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 const sideBarData = [
   {
     section: "Getting Started",
-    topics: [topicByTitle.advice_intro],
+    topics: [topicByTitle.advice_intro, topicByTitle.css_reset, ],
   },
   {
     section: "CSS Set Up",
@@ -29,9 +29,9 @@ function UIUX() {
     setCurrentComponent(topicByTitle[title]?.component);
   }, [title]);
 
-  useEffect(()=>{
-    window.scrollTo({top: 0, left:0, behavior: "smooth"});
-  }, [currentComponent])
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, [currentComponent]);
 
   return (
     <div className="main-content">
@@ -54,4 +54,4 @@ function UIUX() {
 }
 
 export default UIUX;
-export const topicsOnUIUX = sideBarData
+export const topicsOnUIUX = sideBarData;

@@ -8,9 +8,10 @@ import A_Headers from "./Advice/A_Headers";
 import A_Colors from "./Advice/A_Colors";
 import A_Fonts from "./Advice/A_Fonts";
 import C_ExternalLink from "./Components/C_ExternalLink";
+import A_CSSReset from "./Advice/A_CSSReset";
 
 const componentPath = "/components/";
-const advicePath = "/uiux/";
+const uiuxPath = "/uiux/";
 
 export const topicByTitle = {
   // section: {component, name, link}
@@ -33,31 +34,36 @@ export const topicByTitle = {
   advice_intro: {
     component: <A_Introduction />,
     name: "Introduction",
-    link: advicePath + "advice_intro",
+    link: uiuxPath + "advice_intro",
   },
   separation: {
     component: <A_Separation />,
     name: "Margin and Padding",
-    link: advicePath + "separation",
+    link: uiuxPath + "separation",
   },
   headers: {
     component: <A_Headers />,
     name: "Headers",
-    link: advicePath + "headers",
+    link: uiuxPath + "headers",
   },
   colors: {
     component: <A_Colors />,
     name: "Color Shades",
-    link: advicePath + "colors",
+    link: uiuxPath + "colors",
   },
   fonts: {
     component: <A_Fonts />,
     name: "Fonts",
-    link: advicePath + "fonts",
+    link: uiuxPath + "fonts",
   },
   externallink: {
     component: <C_ExternalLink />,
     name: "External Link",
     link: componentPath + "externallink",
   },
+  css_reset:{
+    component: <A_CSSReset/>,
+    name: "CSS Reset",
+    link: uiuxPath + "css_reset",
+  }
 };
